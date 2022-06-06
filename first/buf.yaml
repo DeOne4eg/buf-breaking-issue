@@ -1,0 +1,10 @@
+version: v1
+name: buf.build/DeOne4eg/buf-breaking-issue
+deps:
+  - buf.build/envoyproxy/protoc-gen-validate
+lint:
+  use:
+    - DEFAULT
+  except:
+    - PACKAGE_DIRECTORY_MATCH
+  enum_zero_value_suffix: _INVALID

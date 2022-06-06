@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package io.containerd.cgroups.v1;
+
+import "gogoproto/gogo.proto";
+
+message Metrics {
+  float cpu = 3 [(gogoproto.customname) = "CPU"];
+}
